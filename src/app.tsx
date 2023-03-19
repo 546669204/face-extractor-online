@@ -23,7 +23,7 @@ const App = () => {
             element: <FaceClip />,
         },
     ], {
-        basename: "/face-extractor-online/"
+        // basename: "/face-extractor-online/"
     });
     return <RouterProvider router={router} />
 }
