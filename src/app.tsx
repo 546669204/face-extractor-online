@@ -1,7 +1,7 @@
 
 import React, { useCallback, useEffect, useState } from "react"
 import {
-    createBrowserRouter,
+    createHashRouter,
     RouterProvider,
     Route,
     Link,
@@ -11,7 +11,7 @@ const FaceExtart = React.lazy(() => import("./pages/face-extart"))
 const FaceClip = React.lazy(() => import("./pages/face-clip"))
 
 const App = () => {
-    const router = createBrowserRouter([
+    const router = createHashRouter([
         {
             path: "/",
             element: (
